@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter/services.dart';
 import 'pages/home_page.dart'; // Importing the HomePage widget
+import 'pages/login_page.dart'; // Importing the LoginPage widget
 
 void main() {
   runApp(const MyApp());
@@ -12,18 +13,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
-      themeMode: ThemeMode.system, // Setting the theme mode to system default
+      // home: HomePage(),
+      initialRoute: '/home',
+      themeMode: ThemeMode.light, // Setting the theme mode to system default
       theme: ThemeData(
         brightness: Brightness.light,
-        primarySwatch:
-            Colors.blue, // Setting the primary color of the app to amber
+        primaryColor:
+            Colors.amber, // Setting the primary color of the app to amber
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
-        primarySwatch:
-            Colors.blue, // Setting the primary color of the app to amber
+        primaryColor:
+            Colors.black, // Setting the primary color of the app to amber
       ), // Setting the theme mode
+      routes: {'/': (context) => LoginPage(), '/home': (context) => HomePage()},
     );
   }
 }
