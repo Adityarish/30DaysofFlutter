@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'pages/home_page.dart'; // Importing the HomePage widget
 import 'pages/login_page.dart'; // Importing the LoginPage widget
 import 'package:google_fonts/google_fonts.dart';
+import 'utils/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: HomePage(),
-      initialRoute: '/',
+      initialRoute: MyRoutes.loginRoute,
       themeMode: ThemeMode.light, // Setting the theme mode to system default
       theme: ThemeData(
         primarySwatch: Colors.amber,
@@ -27,7 +28,12 @@ class MyApp extends StatelessWidget {
         primaryColor:
             Colors.black, // Setting the primary color of the app to amber
       ), // Setting the theme mode
-      routes: {'/': (context) => LoginPage(), '/home': (context) => HomePage()},
+      // method to remove debug banner
+      // debugShowCheckedModeBanner: false,
+      routes: {
+        MyRoutes.loginRoute: (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
+      },
     );
   }
 }
