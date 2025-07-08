@@ -16,7 +16,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // home: HomePage(),
-      initialRoute: MyRoutes.loginRoute,
+      initialRoute: MyRoutes
+          .homeRoute, //  default route while developing a page we should use initialRoute
+
       themeMode: ThemeMode.light, // Setting the theme mode to system default
       theme: ThemeData(
         primarySwatch: Colors.amber,
@@ -29,8 +31,9 @@ class MyApp extends StatelessWidget {
             Colors.black, // Setting the primary color of the app to amber
       ), // Setting the theme mode
       // method to remove debug banner
-      // debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       routes: {
+        "/": (context) => LoginPage(),
         MyRoutes.loginRoute: (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
       },
