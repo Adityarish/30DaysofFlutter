@@ -1,0 +1,42 @@
+[
+    {
+      "id": "Codepur001",
+      "name": "iPhone 12 Pro",
+      "desc": "Apple iPhone 12th generation",
+      "price": 999,
+      "color": "#33505a",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISJ6msIu4AU9_M9ZnJVQVFmfuhfyJjEtbUm3ZK11_8IV9TV25-1uM5wHjiFNwKy99w0mR5Hk&usqp=CAc"
+    },
+    {
+      "id": "Codepur002",
+      "name": "Samsung Galaxy S21",
+      "desc": "Samsung's flagship S21 series",
+      "price": 799,
+      "color": "#1c1c1c",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYQySPP48xDJJSP6O0igE2dfBWi-1doAuZ2I8HQRDFju0th_GlAF5gkPqCEQ&usqp=CAc"
+    },
+    {
+      "id": "Codepur003",
+      "name": "Google Pixel 6",
+      "desc": "Google Pixel with pure Android experience",
+      "price": 599,
+      "color": "#3e4a59",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Q6T6WYq6Q3FwImEOYcpTrJcE3YQNFN4J7bSc4JWBy8wVgJQeHAn_TF5UCQ&usqp=CAc"
+    },
+    {
+      "id": "Codepur004",
+      "name": "OnePlus 9 Pro",
+      "desc": "Premium flagship by OnePlus",
+      "price": 729,
+      "color": "#ff3e3e",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDGbTxjrlyprWDDm7QECli6H1LC-sPKr0XCM4dkKqB-KL5rH5CD1R5HJ8q6w&usqp=CAc"
+    },
+    {
+      "id": "Codepur005",
+      "name": "Xiaomi Mi 11",
+      "desc": "Mi 11 with Snapdragon 888",
+      "price": 699,
+      "color": "#00bcd4",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zBdF36kmkGo9qvMs0tpRnxnktz9reO9N1qQy7JW9q2Yfj1nr5gZQ-3j6_w&usqp=CAc"
+    }
+  ]

@@ -14,15 +14,15 @@ class MyDrawer extends StatelessWidget {
           children: [
             DrawerHeader(
               padding: EdgeInsets.zero,
-              child: UserAccountsDrawerHeader(
+              child: UserAccountsDrawerHeader( // constraints goes down to the child, size goes up to the parent, parents sets the position
                 decoration: BoxDecoration(color: Colors.blue.shade200),
                 margin: EdgeInsets.zero,
                 accountName: Text("Gita Singh"),
                 accountEmail: Text("gita.singh@gmail.com"),
                 currentAccountPicture: CircleAvatar(
-                  backgroundImage: AssetImage(
-                    "assets/images/gita.png",
-                  ), // we can fetch from online using NetworkImage(url)
+                  backgroundImage: AssetImage("assets/images/gita.png"),
+                  radius:
+                      50, // we can fetch from online using NetworkImage(url)
                 ),
               ),
             ),
