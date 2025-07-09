@@ -2,6 +2,8 @@ import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
 
 class MyDrawer extends StatelessWidget {
+  const MyDrawer({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -25,6 +27,7 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             ListTile(
+              // adds list or row of items in the drawer
               leading: Icon(CupertinoIcons.home),
               title: Text(
                 "Home",
