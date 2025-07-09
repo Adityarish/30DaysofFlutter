@@ -12,20 +12,13 @@ class HomePage extends StatelessWidget {
     // we can pass a default value inside the function definition ({bool isThaila = false, int age = 18}) and then we can call the function without passing the arguments like this:
     return Scaffold(
       appBar: AppBar(title: Text('Catalog App')),
-      body: Container(
-        constraints: BoxConstraints(
-          minHeight: 70,
-          maxHeight: 200,
-          maxWidth: 200,
-          minWidth: 70,
-        ),
-        color: Colors.amber,
+      body: Center(
         child: Container(
-          // i.e.  size must lies between the constraints which is declared in the parent
-          height: 100,
-          width: 100,
-          color: Colors.green,
-        ), // color have priority over the parent as constraints comes from down
+          child: Text(
+            'Hello, $name!\nEnjoy your $days days of Flutter!',
+            style: TextStyle(fontSize: 24, color: Colors.black),
+          ),
+        ),
       ),
       drawer: MyDrawer(),
     );
